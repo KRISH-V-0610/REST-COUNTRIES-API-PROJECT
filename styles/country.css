@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  --background-color: transparent;
+  --text-color: black;
+  --elements-color: white;
+
+  width: 100vw;
+  margin: 0;
+  font-family: poppins, nunito, Verdana, Geneva, Tahoma, sans-serif;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark-mode {
+  --background-color: hsl(207, 26%, 17%);
+  --text-color: white;
+  --elements-color: hsl(209, 23%, 22%);
+}
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+/* HEADER */
+
+header {
+  /* background-color: rgba(0, 128, 128, 0.605); */
+  background-color: var(--elements-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-inline: 24px;
+  /* position: sticky; */
+}
+.header-content {
+  max-width: 1200px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content p {
+  cursor: pointer;
+}
+.title {
+  font-weight: 600;
+}
+.dark-mode-switch {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.icon {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+.back-btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 50px;
+
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  transition: all 0.2s ease-in-out;
+}
+.back-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+}
+.country-flag {
+  width: 500px;
+  /* overflow: hidden; */
+  filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.4));
+}
+.country-flag img {
+  width: 100%;
+}
+.country-details {
+  min-width: 500px;
+  padding: 5px;
+}
+.other-details {
+  font-size: 16px;
+
+  min-width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+.country-details .country-name {
+  font-size: 32px;
+  font-weight: 600;
+}
+.bc-list {
+  display: flex;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+.border-countries .heading {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.border-countries .country {
+  margin: 10px;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: 550;
+  transition: all 0.2s ease-in-out;
+}
+.border-countries .country:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.2);
+  font-weight: 550;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.dark-mode-switch p {
+  margin-left: 8px;
+}
+@media (max-width: 1200px) {
+  .country-flag img {
+    width: 80%;
+  }
+  .other-details {
+    max-width: 25vw;
+  }
+}
+@media (max-width: 1100px) {
+  .country-flag img {
+    width: 100%;
+  }
+  .main-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .country-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .other-details {
+    min-width: 80vw;
+  }
+  .border-countries .heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .back-btn {
+    margin-left: 40px;
+    margin-block: 30px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 580px) {
+  .header-content h2 {
+    font-size: 16px;
+  }
+  .header-content p {
+    font-size: 10px;
+  }
+
+  body {
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .country-flag {
+    width: 80%;
+  }
+  .flag-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .flag-container img {
+    width: 60vw;
+  }
+  .other-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bc-list {
+    justify-content: center;
+  }
+  .border-countries {
+    width: 80%;
+  }
+
+  .back-btn {
+    margin-left: 40px;
+    margin-block: 30px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 8px;
+  }
+}

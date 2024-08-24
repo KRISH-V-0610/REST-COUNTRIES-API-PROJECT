@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST-Countries-API-PROJECT</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../favicon/icons8-google-earth-400.svg"
+    />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- STYLES-AND-SCRIPTS -->
+    <link rel="stylesheet" href="../styles/country.css" />
+    <script src="../country-script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h2 class="title">Where in the World?</h2>
+        <div class="dark-mode-switch">
+          <i class="fa-solid fa-moon icon"></i>
+          <p>Dark Mode</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <section class="country-flag">
+          <div class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+            BACK
+          </div>
+          <div class="flag-container">
+            <img src="" id="#flag-image" alt="error" />
+          </div>
+        </section>
+
+        <section class="country-details">
+          <p class="country-name"></p>
+
+          <div class="other-details">
+            <section>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </section>
+
+            <section>
+              <p></p>
+              <p><b>Currencies:</b></p>
+              <p><b>Languages:</b></p>
+            </section>
+          </div>
+
+          <div class="border-countries">
+            <div class="heading">Border Countries:</div>
+            <div class="bc-list"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

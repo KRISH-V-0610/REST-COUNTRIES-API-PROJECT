@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST-Countries-API-PROJECT</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./favicon/icons8-google-earth-400.svg"
+    />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS-SCRIPT -->
+    <link rel="stylesheet" href="./styles/index-style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <h2 class="title">Where in the World?</h2>
+        <div class="dark-mode-switch">
+          <i class="fa-solid fa-moon icon"></i>
+          <p>Dark Mode</p>
+        </div>
+      </div>
+    </header>
+    <!-- https://flagcdn.com/gs.svg -->
+    <main>
+      <div class="search-filter-container">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search Country..."
+          />
+        </div>
+      </div>
+
+      <div class="countrys-card-container"></div>
+    </main>
+  </body>
+</html>
